@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidiya Cafe & Fast Food | Addis Ababa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="logo">Lidiya<span class="accent">.</span></a>
+            <div class="mobile-btn" id="mobile-btn">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#coffee">Coffee</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#visit">Visit Us</a></li>
+                <li><a href="tel:0911901648" class="nav-cta">Call to Reserve</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow animate-up" style="animation-delay:0.1s">Addis Ababa, Ethiopia &mdash; Est. on Queen Elizabeth II St.</p>
+            <h1 class="animate-up" style="animation-delay:0.25s">Where Every Cup<br>Tells a <em>Story</em></h1>
+            <p class="hero-sub animate-up" style="animation-delay:0.4s">Authentic Ethiopian coffee culture, handcrafted pastries, and fresh cakes &mdash; served with warmth in the heart of Addis.</p>
+            <div class="hero-actions animate-up" style="animation-delay:0.55s">
+                <a href="#menu" class="btn-primary">Explore Our Menu</a>
+                <a href="#coffee" class="btn-ghost">Our Coffee Story</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- STATS -->
+    <div class="stats-strip">
+        <div class="stat animate-on-scroll"><strong>4.2★</strong><span>Google Rating</span></div>
+        <div class="stat animate-on-scroll" style="transition-delay:.1s"><strong>20+</strong><span>Reviews</span></div>
+        <div class="stat animate-on-scroll" style="transition-delay:.2s"><strong>Dine-in</strong><span>&amp; Takeaway</span></div>
+        <div class="stat animate-on-scroll" style="transition-delay:.3s"><strong>7 AM</strong><span>Opens Daily</span></div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+        <div class="about-grid">
+            <div class="about-images animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Ethiopian coffee ceremony" class="about-img-main">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80" alt="Coffee close up" class="about-img-small">
+            </div>
+            <div class="about-text animate-on-scroll" style="transition-delay:.15s">
+                <p class="section-label">Our Story</p>
+                <h2>A Cafe Born from<br>Ethiopian <em>Tradition</em></h2>
+                <p>Lidiya Cafe & Fast Food is more than a restaurant &mdash; it is a celebration of Ethiopia's extraordinary coffee heritage, brought into a warm, welcoming space in the heart of Addis Ababa.</p>
+                <p>From the rich, bold espresso rooted in centuries of Ethiopian tradition to our freshly baked cakes and pastries, every item on our menu is crafted with care and served with the hospitality Ethiopia is known for worldwide.</p>
+                <p>Whether you are stopping in for a solo breakfast, catching up with friends over coffee, or enjoying a leisurely lunch, Lidiya is your home away from home.</p>
+                <div class="about-tags">
+                    <span>☕ Great Coffee</span>
+                    <span>🍰 Fresh Cakes</span>
+                    <span>🌅 Breakfast &amp; Lunch</span>
+                    <span>👨‍👩‍👧 Family Friendly</span>
+                    <span>🚗 Free Parking</span>
+                    <span>🍺 Alcohol Served</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section menu-section">
+        <div class="section-header animate-on-scroll">
+            <p class="section-label">What We Serve</p>
+            <h2>Our Menu</h2>
+            <p class="section-sub">From morning coffee to evening meals &mdash; fresh, flavourful, and made with love.</p>
+        </div>
+
+        <div class="filter-bar animate-on-scroll">
+            <button class="filter-btn active" onclick="filterMenu('all', this)">All</button>
+            <button class="filter-btn" onclick="filterMenu('coffee', this)">Coffee & Drinks</button>
+            <button class="filter-btn" onclick="filterMenu('cakes', this)">Cakes & Pastries</button>
+            <button class="filter-btn" onclick="filterMenu('food', this)">Food</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid"></div>
+    </section>
+
+    <!-- COFFEE CULTURE -->
+    <section id="coffee" class="section coffee-section">
+        <div class="coffee-inner">
+            <div class="coffee-text animate-on-scroll">
+                <p class="section-label" style="color:#c8a96e">Coffee Culture</p>
+                <h2 style="color:#fff">Ethiopia: The Birthplace<br>of <em>Coffee</em></h2>
+                <p style="color:#c4b49a">Coffee was born in Ethiopia. The legend of Kaldi the goat herder discovering coffee beans in the highlands of Kaffa has echoed through centuries, and Ethiopia has been sharing its gift with the world ever since.</p>
+                <p style="color:#c4b49a">At Lidiya, we honour this heritage with every cup. We serve traditional Ethiopian coffee alongside modern espresso preparations &mdash; because great coffee deserves great company.</p>
+                <div class="coffee-steps">
+                    <div class="coffee-step">
+                        <span class="step-num">01</span>
+                        <div>
+                            <strong>Roasted Fresh</strong>
+                            <p>Beans sourced from Ethiopian highlands, roasted to perfection.</p>
+                        </div>
+                    </div>
+                    <div class="coffee-step">
+                        <span class="step-num">02</span>
+                        <div>
+                            <strong>Brewed with Care</strong>
+                            <p>Traditional jebena brewing alongside modern espresso methods.</p>
+                        </div>
+                    </div>
+                    <div class="coffee-step">
+                        <span class="step-num">03</span>
+                        <div>
+                            <strong>Served with Warmth</strong>
+                            <p>Every cup comes with the legendary Ethiopian hospitality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coffee-images animate-on-scroll" style="transition-delay:.15s">
+                <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=700&q=80" alt="Ethiopian coffee jebena" class="coffee-img-main">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Coffee cup art" class="coffee-img-small">
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section reviews-section">
+        <div class="section-header animate-on-scroll">
+            <p class="section-label">What People Say</p>
+            <h2>Guest Reviews</h2>
+            <p class="section-sub">Real feedback from our Google Maps listing &mdash; straight from our guests.</p>
+        </div>
+        <div class="reviews-grid" id="reviews-grid"></div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq-section">
+        <div class="section-header animate-on-scroll">
+            <p class="section-label">Good to Know</p>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item animate-on-scroll">
+                <button class="faq-q" onclick="toggleFaq(this)">What are your opening hours? <span class="faq-icon">+</span></button>
+                <div class="faq-a"><p>We open daily at 7 AM. We are open for breakfast, lunch, and dinner. For current closing times or holiday hours, give us a call on 091 190 1648.</p></div>
+            </div>
+            <div class="faq-item animate-on-scroll" style="transition-delay:.05s">
+                <button class="faq-q" onclick="toggleFaq(this)">Do you offer takeaway? <span class="faq-icon">+</span></button>
+                <div class="faq-a"><p>Yes, both dine-in and takeaway are available. You can call ahead on 091 190 1648 to place your order so it is ready when you arrive.</p></div>
+            </div>
+            <div class="faq-item animate-on-scroll" style="transition-delay:.1s">
+                <button class="faq-q" onclick="toggleFaq(this)">Do you serve alcohol? <span class="faq-icon">+</span></button>
+                <div class="faq-a"><p>Yes. We serve beer and a selection of alcoholic beverages alongside our full food and coffee menu.</p></div>
+            </div>
+            <div class="faq-item animate-on-scroll" style="transition-delay:.15s">
+                <button class="faq-q" onclick="toggleFaq(this)">Is there parking available? <span class="faq-icon">+</span></button>
+                <div class="faq-a"><p>Yes, free street parking is available outside. We are located at 2QJF+XR2, Queen Elizabeth II St, Addis Ababa, which is easily accessible by car or taxi.</p></div>
+            </div>
+            <div class="faq-item animate-on-scroll" style="transition-delay:.2s">
+                <button class="faq-q" onclick="toggleFaq(this)">Is the cafe good for families and groups? <span class="faq-icon">+</span></button>
+                <div class="faq-a"><p>Absolutely. We welcome families, groups, and solo diners alike. The atmosphere is casual and relaxed, and we are good for kids too.</p></div>
+            </div>
+            <div class="faq-item animate-on-scroll" style="transition-delay:.25s">
+                <button class="faq-q" onclick="toggleFaq(this)">Can I order a custom cake? <span class="faq-icon">+</span></button>
+                <div class="faq-a"><p>Yes! We bake fresh cakes and pastries daily. For custom cake orders, please call us on 091 190 1648 at least 48 hours in advance and we will do our best to accommodate you.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISIT -->
+    <section id="visit" class="section visit-section">
+        <div class="visit-grid">
+            <div class="visit-info animate-on-scroll">
+                <p class="section-label">Find Us</p>
+                <h2>Come Visit Lidiya</h2>
+                <p>We are conveniently located on Queen Elizabeth II Street in Addis Ababa, with free street parking and easy access from across the city.</p>
+                <div class="visit-details">
+                    <div class="visit-row">
+                        <span class="visit-icon">📍</span>
+                        <div>
+                            <strong>Address</strong>
+                            <span>2QJF+XR2, Queen Elizabeth II St, Addis Ababa</span>
+                        </div>
+                    </div>
+                    <div class="visit-row">
+                        <span class="visit-icon">📞</span>
+                        <div>
+                            <strong>Phone</strong>
+                            <a href="tel:0911901648">091 190 1648</a>
+                        </div>
+                    </div>
+                    <div class="visit-row">
+                        <span class="visit-icon">🕐</span>
+                        <div>
+                            <strong>Hours</strong>
+                            <span>Open daily from 7:00 AM</span>
+                        </div>
+                    </div>
+                    <div class="visit-row">
+                        <span class="visit-icon">🍽️</span>
+                        <div>
+                            <strong>Service</strong>
+                            <span>Dine-in &amp; Takeaway</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://maps.app.goo.gl/u8nPmXEadZA6pzLZ7" target="_blank" rel="noopener" class="btn-primary" style="margin-top:28px; display:inline-block">Open in Google Maps &rarr;</a>
+            </div>
+            <div class="visit-map animate-on-scroll" style="transition-delay:.15s">
+                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80" alt="Cafe interior" class="visit-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="logo" style="font-size:2rem; margin-bottom:10px;">Lidiya<span class="accent">.</span></div>
+                <p>Authentic Ethiopian coffee culture, fresh cakes, and warm hospitality &mdash; in the heart of Addis Ababa.</p>
+                <div class="social-links">
+                    <a href="https://maps.app.goo.gl/u8nPmXEadZA6pzLZ7" class="social-link" target="_blank" title="Google Maps">G</a>
+                    <a href="#" class="social-link" title="Instagram">IG</a>
+                    <a href="#" class="social-link" title="Facebook">f</a>
+                    <a href="#" class="social-link" title="Telegram">T</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Navigate</h5>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#coffee">Coffee Culture</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Menu</h5>
+                <ul>
+                    <li><a href="#menu">Coffee &amp; Drinks</a></li>
+                    <li><a href="#menu">Cakes &amp; Pastries</a></li>
+                    <li><a href="#menu">Breakfast</a></li>
+                    <li><a href="#menu">Lunch &amp; Dinner</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Visit</h5>
+                <ul>
+                    <li><a href="tel:0911901648">091 190 1648</a></li>
+                    <li><a href="https://maps.app.goo.gl/u8nPmXEadZA6pzLZ7" target="_blank">Queen Elizabeth II St</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#visit">Directions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lidiya Cafe &amp; Fast Food. All rights reserved.</p>
+            <p class="footer-credit">Website designed &amp; developed by <a href="#" target="_blank">SpiderWeb</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
