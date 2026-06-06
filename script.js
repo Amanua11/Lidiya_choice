@@ -16,7 +16,7 @@ const menuItems = [
         name: "Macchiato",
         category: "coffee",
         desc: "Ethiopia's most beloved daily drink — a short, strong espresso topped with a dash of foam.",
-        img: "https://images.unsplash.com/photo-1485808191679-5f86510bd9d4?auto=format&fit=crop&w=600&q=80"
+        img: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80"
     },
     {
         name: "Fresh Tea Selection",
@@ -34,7 +34,7 @@ const menuItems = [
         name: "Chocolate Fudge Cake",
         category: "cakes",
         desc: "Rich, indulgent chocolate cake with velvety fudge frosting. Our most popular dessert.",
-        img: "https://images.unsplash.com/photo-1565808229224-264b4f22d9c6?auto=format&fit=crop&w=600&q=80"
+        img: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=600&q=80"
     },
     {
         name: "Fresh Fruit Tart",
